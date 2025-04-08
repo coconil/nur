@@ -15,6 +15,9 @@
   overlays = import ./overlays; # nixpkgs overlays
 
   example-package = pkgs.callPackage ./pkgs/example-package { };
+  cfw = pkgs.callPackage ./pkgs/cfw { };
+  windterm = pkgs.callPackage ./pkgs/windterm { };
+  dingtalk = pkgs.callPackage ./pkgs/dingtalk { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }

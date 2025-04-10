@@ -2,6 +2,7 @@
 , lib
 , autoPatchelfHook
 , makeWrapper
+, makeDesktopItem
 , callPackage
 , unzip
 , libgcc

@@ -91,7 +91,7 @@ stdenv.mkDerivation rec {
   chmod 777 $out/WindTerm
 
   # App Menu
-  install -Dm644 $out/lib/Resources/image/common/about/logo.png $out/share/pixmaps/windterm.png
+  install -Dm644 $out/windterm.png $out/share/pixmaps/windterm.png
 
   '';
 

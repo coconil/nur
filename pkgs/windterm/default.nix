@@ -100,7 +100,7 @@ stdenv.mkDerivation rec {
       name = "windterm";
       desktopName = "windterm";
       genericName = "windterm";
-      categories = [ "Develop" ];
+      categories = [ "Development" ];
       exec = "windterm %u";
       icon = "windterm";
     })

@@ -111,7 +111,7 @@ stdenv.mkDerivation rec {
     description = "windterm";
     homepage = "https://github.com/kingToolbox/WindTerm";
     platforms = [ "x86_64-linux" ];
-    license = lib.licenses.Apache-2.0;
+    license = lib.licenses.asl20;
     sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     mainProgram = "windterm";
   };

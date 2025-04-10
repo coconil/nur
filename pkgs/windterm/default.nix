@@ -1,5 +1,4 @@
 { stdenv , fetchurl
-, electron
 , lib
 , autoPatchelfHook
 , makeWrapper

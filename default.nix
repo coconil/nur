@@ -14,10 +14,10 @@
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 
-  example-package = pkgs.callPackage ./pkgs/example-package { };
-  cfw = pkgs.callPackage ./pkgs/cfw { };
+  #cfw = pkgs.callPackage ./pkgs/cfw { };
   windterm = pkgs.callPackage ./pkgs/windterm { };
-  dingtalk = pkgs.callPackage ./pkgs/dingtalk { };
+  mybase = pkgs.callPackage ./pkgs/mybase { };
+  #mybase = pkgs.libsForQt5.callPackage ./pkgs/mybase { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }

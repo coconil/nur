@@ -14,6 +14,7 @@
 ,psqlodbc
 ,cups
 ,hyphen
+,copyDesktopItems
 # depency
 
 }:
@@ -26,7 +27,7 @@ stdenv.mkDerivation rec {
     sha256="sha256-g32CB3Z1Il1fx+6IHlbQ/i4xZGggovzvyhxZmD9nDSI=";
   };
 
-  nativeBuildInputs = [ autoPatchelfHook makeWrapper unzip ];
+  nativeBuildInputs = [ autoPatchelfHook makeWrapper unzip copyDesktopItems];
 
   unpackPhase = ''
     tar xf ${src}

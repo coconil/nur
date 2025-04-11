@@ -22,6 +22,7 @@
 ,libpulseaudio
 ,alsa-lib
 ,qt5
+,copyDesktopItems
 # depency
 
 }:
@@ -30,11 +31,11 @@ stdenv.mkDerivation rec {
   name = "windterm-${version}";
   version = "2.7.0";
   src = fetchurl{
-    url = "https://github.com/kingToolbox/WindTerm/releases/download/${version}/WindTerm_${version}_Linux_Portable_x86_64.zip";
+    url = "https://goppx.com/https://github.com/kingToolbox/WindTerm/releases/download/${version}/WindTerm_${version}_Linux_Portable_x86_64.zip";
     sha256="sha256-d5dpfutgI5AgUS4rVJaVpgw5s/0B/n67BH/VCiiJEDw=";
   };
 
-  nativeBuildInputs = [ autoPatchelfHook makeWrapper unzip ];
+  nativeBuildInputs = [ autoPatchelfHook makeWrapper unzip copyDesktopItems];
 
   unpackPhase = ''
     unzip ${src}

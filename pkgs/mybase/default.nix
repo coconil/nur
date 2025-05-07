@@ -46,12 +46,11 @@ stdenv.mkDerivation rec {
  ];
 
   installPhase = ''
-  mkdir -p $out
-  cp -r Mybase8/* $out/
+  mkdir -p $out/
+  install -Dm644  Mybase8/* $out/opt/Mybase8
 
   # App Menu
-  install -Dm644 $out/nyf8_logo_256.png $out/share/pixmaps/mybase.png
-  rm $out/license.txt
+  install -Dm644 $out/opt/Mybase8/nyf8_logo_256.png $out/share/pixmaps/mybase.png
   '';
 
   desktopItems = [

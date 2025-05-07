@@ -88,12 +88,12 @@ stdenv.mkDerivation rec {
 
   installPhase = ''
   mkdir -p $out
-  cp -r WindTerm_${version}/* $out/
-  rm $out/license.txt
-  chmod 777 $out/WindTerm
+  install -Dm644  WindTerm_${version}/* $out/opt/WindTerm_${version}
+
+  chmod 777 $out/opt/WindTerm_${version}/WindTerm
 
   # App Menu
-  install -Dm644 $out/windterm.png $out/share/pixmaps/windterm.png
+  install -Dm644 $out/opt/WindTerm_${version}/windterm.png $out/share/pixmaps/windterm.png
 
   '';
 

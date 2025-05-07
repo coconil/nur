@@ -87,7 +87,7 @@ stdenv.mkDerivation rec {
  ];
 
   installPhase = ''
-  mkdir -p $out
+  mkdir -p $out/opt/WindTerm_${version}
   install -Dm644  WindTerm_${version}/* $out/opt/WindTerm_${version}
 
   chmod 777 $out/opt/WindTerm_${version}/WindTerm

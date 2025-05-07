@@ -46,7 +46,7 @@ stdenv.mkDerivation rec {
  ];
 
   installPhase = ''
-  mkdir -p $out/
+  mkdir -p $out/opt/Mybase8
   install -Dm644  Mybase8/* $out/opt/Mybase8
 
   # App Menu

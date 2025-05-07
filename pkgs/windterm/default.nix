@@ -89,6 +89,7 @@ stdenv.mkDerivation rec {
   installPhase = ''
   mkdir -p $out
   cp -r WindTerm_${version}/* $out/
+  rm $out/license.txt
   chmod 777 $out/WindTerm
 
   # App Menu

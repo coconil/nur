@@ -51,7 +51,7 @@ stdenv.mkDerivation rec {
 
   # App Menu
   install -Dm644 $out/nyf8_logo_256.png $out/share/pixmaps/mybase.png
-
+  rm $out/license.txt
   '';
 
   desktopItems = [
